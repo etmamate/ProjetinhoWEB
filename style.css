@@ -1,34 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-h1{
+h1 {
     margin: 40px 0 40px 0;
     color: aliceblue;
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
-    background-color: darkslategrey;
+body {
+    background-color: rgb(10 12 16);
 }
 
-.box, form{
+.box,
+form {
     gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-input{
+
+input {
     width: 200px;
     height: 25px;
     border-radius: 30px;
     padding: 0 15px 0 15px;
 }
 
-button{
+button {
     width: 100px;
     height: 30px;
     border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
