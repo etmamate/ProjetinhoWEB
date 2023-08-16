@@ -1,7 +1,7 @@
 package br.com.apitest.project.model;
 
-import com.mysql.cj.x.protobuf.MysqlxCrud.Column;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,15 +14,15 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @jakarta.persistence.Column(name = "id")
+    @Column(name = "id")
     private Integer id;
-    @jakarta.persistence.Column(name = "nome", length = 200, nullable = true)
+    @Column(name = "nome", length = 200, nullable = true)
     private String nome;
-    @jakarta.persistence.Column(name = "email", length = 50, nullable = true)
+    @Column(name = "email", length = 50, nullable = true)
     private String email;
-    @jakarta.persistence.Column(name = "senha", columnDefinition = "TEXT", nullable = true)
+    @Column(name = "senha", columnDefinition = "TEXT", nullable = true)
     private String senha;
-    @jakarta.persistence.Column(name = "telefone", length = 15, nullable = true)
+    @Column(name = "telefone", length = 15, nullable = true)
     private String telefone;
 
     // Getters & Setters
